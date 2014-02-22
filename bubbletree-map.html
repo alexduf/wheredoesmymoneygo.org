@@ -14,16 +14,14 @@ title: Country and Regional Analysis
        new OpenSpending.BubbleMap({
           openspendingjs: '{{site.openspendingjs}}',
           query: {
-            dataset: 'ukgov-finances-cra',
-            cuts: ['year:2010'],
-            drilldowns: ['cofog1', 'cofog2', 'cofog3'],
-            breakdown: 'region',
+            dataset: 'test1234567890',
+            cra: ['year:2012'],
+            drilldowns: ['Category', 'program'],
+            breakdown: 'Category',
             rootNodeLabel: 'Total'
           },
           bubbleStyles: {
-							'cofog-1':  BubbleTreeStyles.Cofog1,
-							'cofog-2':  BubbleTreeStyles.Cofog2,
-							'cofog-3':  BubbleTreeStyles.Cofog3
+							'title':  BubbleTreeStyles.Cofog1
 				  },
           map: {
             url: '/img/gbr.svg',
@@ -48,7 +46,7 @@ title: Country and Regional Analysis
     </div>  
   </div>
   <div id="wdmmg-map-legend" class="under-curtain"></div>
-  <div id="wdmmg-map" class="under-curtain"></div>
+  <div id="wdmmg-map" class="under-curtain hidden"></div>
 </div><!-- /#wdmmg-bubblemap -->
 
 
